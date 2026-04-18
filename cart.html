@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your 2FM BagStore shopping cart – review items, update quantities, and proceed to checkout." />
+  <title>Shopping Cart – 2FM BagStore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👜</text></svg>" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumb" style="justify-content:center">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span class="current">Cart</span>
+        </div>
+        <h1 class="page-hero-title">Your Cart</h1>
+        <p class="page-hero-subtitle">Review your selections before checkout.</p>
+      </div>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="cart-page">
+      <div class="container">
+        <div class="cart-layout">
+
+          <!-- Cart Items -->
+          <div>
+            <div id="cartItemsContainer">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Cart Summary -->
+          <aside id="cartSummarySection">
+            <div class="cart-summary">
+              <h2 class="cart-summary-title">Order Summary</h2>
+
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+              </div>
+              <div class="summary-row">
+                <span>
+                  Shipping
+                  <span style="font-size:0.7rem;color:var(--color-text-light);display:block">Free on orders over $100</span>
+                </span>
+                <span id="cartShipping">$0.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Tax (8%)</span>
+                <span id="cartTax">$0.00</span>
+              </div>
+
+              <div class="summary-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+              </div>
+
+              <!-- Promo Code -->
+              <form class="promo-code" id="promoForm">
+                <input type="text" class="promo-input" placeholder="Promo code" />
+                <button type="submit" class="promo-apply-btn">Apply</button>
+              </form>
+
+              <button class="btn btn-primary btn-full btn-lg" id="checkoutBtn">
+                Proceed to Checkout
+              </button>
+
+              <!-- Trust Badges -->
+              <div class="cart-trust-badges">
+                <div class="trust-item">
+                  <span class="trust-item-icon">🔒</span>
+                  <span>Secure checkout with SSL encryption</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-item-icon">🚚</span>
+                  <span>Free shipping on orders over $100</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-item-icon">↩️</span>
+                  <span>30-day hassle-free returns</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module">
+    import { renderNavbar } from "./js/components/navbar.js";
+    import { renderFooter } from "./js/components/footer.js";
+    import { initCart }     from "./js/pages/cart.js";
+
+    renderNavbar();
+    initCart();
+    renderFooter();
+  </script>
+</body>
+</html>

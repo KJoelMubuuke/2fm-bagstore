@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the full 2FM BagStore collection – totes, backpacks, handbags, clutches, and more. Filter by style, price, and category." />
+  <title>Shop All Bags – 2FM BagStore</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👜</text></svg>" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <!-- Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <div class="breadcrumb" style="justify-content:center">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span class="current">Shop</span>
+        </div>
+        <h1 class="page-hero-title">All Bags</h1>
+        <p class="page-hero-subtitle">Explore our full collection — from everyday totes to statement clutches.</p>
+      </div>
+    </div>
+
+    <!-- Products Page -->
+    <div class="products-page">
+      <div class="container">
+
+        <!-- Mobile filter toggle -->
+        <div style="margin-bottom:1rem">
+          <button class="filter-mobile-toggle" id="filterToggle">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/>
+            </svg>
+            Filters
+          </button>
+        </div>
+
+        <div class="products-layout">
+
+          <!-- ─── Filters Sidebar ────────────────── -->
+          <aside class="filter-sidebar">
+            <div class="filter-panel" id="filterPanel">
+              <button class="filter-panel-close" id="filterClose" aria-label="Close filters">✕</button>
+              <div class="filter-header">
+                <span class="filter-title">Filters</span>
+                <button class="filter-clear-btn" id="clearFilters">Clear all</button>
+              </div>
+
+              <!-- Category -->
+              <div class="filter-section">
+                <h3 class="filter-section-title">Category</h3>
+                <div class="filter-list" id="categoryFilterList">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+
+              <!-- Price -->
+              <div class="filter-section">
+                <h3 class="filter-section-title">Max Price</h3>
+                <div class="price-range-values">
+                  <span>$0</span>
+                  <span id="priceMax">$200</span>
+                </div>
+                <input
+                  type="range"
+                  id="priceRange"
+                  class="price-range-slider"
+                  min="20"
+                  max="200"
+                  value="200"
+                  step="5"
+                />
+              </div>
+            </div>
+          </aside>
+
+          <!-- ─── Products Main Area ──────────────── -->
+          <section>
+            <!-- Toolbar -->
+            <div class="products-toolbar">
+              <div class="toolbar-left">
+                <!-- Search -->
+                <div class="search-box">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                  </svg>
+                  <input
+                    type="search"
+                    id="productSearch"
+                    class="search-input"
+                    placeholder="Search bags…"
+                    autocomplete="off"
+                  />
+                </div>
+                <span class="results-count" id="resultsCount"></span>
+              </div>
+
+              <div style="display:flex;gap:0.75rem;align-items:center">
+                <!-- Sort -->
+                <select id="sortSelect" class="sort-select">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low → High</option>
+                  <option value="price-desc">Price: High → Low</option>
+                  <option value="rating">Top Rated</option>
+                  <option value="newest">Newest</option>
+                </select>
+
+                <!-- View toggle -->
+                <div class="view-toggle">
+                  <button class="view-btn active" data-view="grid" aria-label="Grid view">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                      <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                      <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                  </button>
+                  <button class="view-btn" data-view="list" aria-label="List view">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productsGrid">
+              <!-- Populated by JS -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="productModalBody">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script type="module">
+    import { renderNavbar }  from "./js/components/navbar.js";
+    import { renderFooter }  from "./js/components/footer.js";
+    import { initProducts }  from "./js/pages/products.js";
+
+    renderNavbar();
+    initProducts();
+    renderFooter();
+  </script>
+</body>
+</html>
