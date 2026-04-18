@@ -131,13 +131,11 @@
 
 .hero-badge-shipping {
   bottom: var(--space-8);
-  left: -var(--space-4);
   left: -1rem;
 }
 
 .hero-badge-rating {
   top: var(--space-8);
-  right: -var(--space-4);
   right: -1rem;
 }
 
