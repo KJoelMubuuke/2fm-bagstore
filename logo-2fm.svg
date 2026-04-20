@@ -1,0 +1,28 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">2FM BAGSTORE Logo</title>
+  <desc id="logoDesc">A custom monogram logo with a bag-inspired symbol for 2FM BAGSTORE.</desc>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="30" y1="20" x2="190" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2ecc71"/>
+      <stop offset="1" stop-color="#27ae60"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="70" y1="52" x2="150" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7EE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ccf2da" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#1e8449" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <rect x="20" y="20" width="180" height="180" rx="48" fill="url(#bgGrad)"/>
+
+    <path d="M74 92C74 72.12 90.12 56 110 56C129.88 56 146 72.12 146 92" stroke="#FFF7EE" stroke-width="10" stroke-linecap="round"/>
+    <rect x="62" y="86" width="96" height="98" rx="24" fill="url(#glassGrad)" stroke="#FFF7EE" stroke-opacity="0.75" stroke-width="2"/>
+
+    <path d="M80 162V108H95.5L107 129L118.5 108H134V162H120V131L109.5 150H104.5L94 131V162H80Z" fill="#1e8449"/>
+    <path d="M86 112H69V126H82.5V139H69V162H55V98H86V112Z" fill="#1e8449"/>
+  </g>
+</svg>
