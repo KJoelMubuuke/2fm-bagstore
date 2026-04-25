@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    name: "Modern Tote",
+    name: "Soho Work Tote",
     category: "tote",
     price: 80000,
     image: "images/bag-1.jpg",
@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Vintage Satchel",
+    name: "Heritage Satchel",
     category: "crossbody",
     price: 150000,
     image: "images/bag-2.jpg",
@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Elegant Crossbody",
+    name: "Luna Crossbody",
     category: "crossbody",
     price: 170000,
     image: "images/bag-3.jpg",
@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Classic Satchel",
+    name: "Regent Satchel",
     category: "crossbody",
     price: 220000,
     image: "images/bag-4.jpg",
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Statement Tote",
+    name: "Harper Shopper Tote",
     category: "tote",
     price: 200000,
     image: "images/bag-5.jpg",
@@ -51,7 +51,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Vintage Tote",
+    name: "Camden Tote",
     category: "tote",
     price: 120000,
     image: "images/bag-6.jpg",
@@ -61,7 +61,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Structured Satchel",
+    name: "Briar Structured Satchel",
     category: "crossbody",
     price: 170000,
     image: "images/bag-7.jpg",
@@ -71,7 +71,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Luxury Clutch",
+    name: "Noelle Evening Clutch",
     category: "clutch",
     price: 160000,
     image: "images/bag-8.jpg",
@@ -81,7 +81,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Signature Crossbody",
+    name: "Mila Crossbody",
     category: "crossbody",
     price: 130000,
     image: "images/bag-9.jpg",
@@ -91,7 +91,7 @@ const products = [
   },
   {
     id: 10,
-    name: "Luxury Tote",
+    name: "West End Tote",
     category: "tote",
     price: 170000,
     image: "images/bag-10.jpg",
@@ -101,7 +101,7 @@ const products = [
   },
   {
     id: 11,
-    name: "Classic Mini Bag",
+    name: "Aria Mini Bag",
     category: "mini",
     price: 240000,
     image: "images/bag-11.jpg",
@@ -111,7 +111,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Elegant Mini Bag",
+    name: "Nora Mini Bag",
     category: "mini",
     price: 140000,
     image: "images/bag-12.jpg",
@@ -121,7 +121,7 @@ const products = [
   },
   {
     id: 13,
-    name: "Chic Clutch",
+    name: "Siena Clutch",
     category: "clutch",
     price: 180000,
     image: "images/bag-13.jpg",
@@ -131,7 +131,7 @@ const products = [
   },
   {
     id: 14,
-    name: "Minimalist Flap Bag",
+    name: "Elsie Flap Mini",
     category: "mini",
     price: 130000,
     image: "images/bag-14.jpg",
@@ -141,7 +141,7 @@ const products = [
   },
   {
     id: 15,
-    name: "Signature Mini Bag",
+    name: "Ruby Mini Bag",
     category: "mini",
     price: 60000,
     image: "images/bag-15.jpg",
@@ -151,7 +151,7 @@ const products = [
   },
   {
     id: 16,
-    name: "Elegant Clutch",
+    name: "Selene Clutch",
     category: "clutch",
     price: 210000,
     image: "images/bag-16.jpg",
@@ -161,7 +161,7 @@ const products = [
   },
   {
     id: 17,
-    name: "Soft Satchel",
+    name: "Rowan Satchel",
     category: "crossbody",
     price: 130000,
     image: "images/bag-17.jpg",
@@ -171,7 +171,7 @@ const products = [
   },
   {
     id: 18,
-    name: "Signature Flap Bag",
+    name: "Ivy Flap Mini",
     category: "mini",
     price: 170000,
     image: "images/bag-18.jpg",
@@ -181,7 +181,7 @@ const products = [
   },
   {
     id: 19,
-    name: "Premium Mini Bag",
+    name: "Poppy Mini Bag",
     category: "mini",
     price: 90000,
     image: "images/bag-19.jpg",
@@ -191,7 +191,7 @@ const products = [
   },
   {
     id: 20,
-    name: "Statement Clutch",
+    name: "Marlowe Clutch",
     category: "clutch",
     price: 190000,
     image: "images/bag-20.jpg",
@@ -201,7 +201,7 @@ const products = [
   },
   {
     id: 21,
-    name: "Chic Clutch",
+    name: "Belle Clutch",
     category: "clutch",
     price: 150000,
     image: "images/bag-21.jpg",
@@ -211,7 +211,7 @@ const products = [
   },
   {
     id: 22,
-    name: "Soft Satchel",
+    name: "Ava Satchel",
     category: "crossbody",
     price: 80000,
     image: "images/bag-22.jpg",
@@ -221,7 +221,7 @@ const products = [
   },
   {
     id: 23,
-    name: "Classic Clutch",
+    name: "Monarch Clutch",
     category: "clutch",
     price: 250000,
     image: "images/bag-23.jpg",
@@ -231,7 +231,7 @@ const products = [
   },
   {
     id: 24,
-    name: "Luxury Shoulder Bag",
+    name: "Portia Shoulder Bag",
     category: "crossbody",
     price: 230000,
     image: "images/bag-24.jpg",
@@ -241,7 +241,7 @@ const products = [
   },
   {
     id: 25,
-    name: "Signature Mini Bag",
+    name: "Zoe Mini Bag",
     category: "mini",
     price: 150000,
     image: "images/bag-25.jpg",
@@ -251,7 +251,7 @@ const products = [
   },
   {
     id: 26,
-    name: "Minimalist Clutch",
+    name: "Cleo Clutch",
     category: "clutch",
     price: 180000,
     image: "images/bag-26.jpg",
@@ -261,7 +261,7 @@ const products = [
   },
   {
     id: 27,
-    name: "Luxury Shoulder Bag",
+    name: "Eden Shoulder Bag",
     category: "crossbody",
     price: 60000,
     image: "images/bag-27.jpg",
@@ -271,7 +271,7 @@ const products = [
   },
   {
     id: 28,
-    name: "Modern Mini Bag",
+    name: "Gia Mini Bag",
     category: "mini",
     price: 200000,
     image: "images/bag-28.jpg",
@@ -281,7 +281,7 @@ const products = [
   },
   {
     id: 29,
-    name: "Everyday Clutch",
+    name: "Demi Clutch",
     category: "clutch",
     price: 90000,
     image: "images/bag-29.jpg",
@@ -291,7 +291,7 @@ const products = [
   },
   {
     id: 30,
-    name: "Premium Mini Bag",
+    name: "Mae Mini Bag",
     category: "mini",
     price: 150000,
     image: "images/bag-30.jpg",
@@ -301,7 +301,7 @@ const products = [
   },
   {
     id: 31,
-    name: "Soft Shoulder Bag",
+    name: "Olive Shoulder Bag",
     category: "crossbody",
     price: 120000,
     image: "images/bag-31.jpg",
@@ -311,7 +311,7 @@ const products = [
   },
   {
     id: 32,
-    name: "Signature Shoulder Bag",
+    name: "Sloane Shoulder Bag",
     category: "crossbody",
     price: 230000,
     image: "images/bag-32.jpg",
@@ -321,7 +321,7 @@ const products = [
   },
   {
     id: 33,
-    name: "Modern Shoulder Bag",
+    name: "Lyra Shoulder Bag",
     category: "crossbody",
     price: 90000,
     image: "images/bag-33.jpg",
@@ -331,7 +331,7 @@ const products = [
   },
   {
     id: 34,
-    name: "Minimalist Tote",
+    name: "Mercer Tote",
     category: "tote",
     price: 230000,
     image: "images/bag-34.jpg",
@@ -341,7 +341,7 @@ const products = [
   },
   {
     id: 35,
-    name: "Structured Charm",
+    name: "Faye Mini Bag",
     category: "mini",
     price: 190000,
     image: "images/bag-35.jpg",
@@ -351,7 +351,7 @@ const products = [
   },
   {
     id: 36,
-    name: "Soft Clutch",
+    name: "Opal Clutch",
     category: "clutch",
     price: 240000,
     image: "images/bag-36.jpg",
@@ -361,7 +361,7 @@ const products = [
   },
   {
     id: 37,
-    name: "Elegant Clutch",
+    name: "Serena Clutch",
     category: "clutch",
     price: 250000,
     image: "images/bag-37.jpg",
@@ -371,7 +371,7 @@ const products = [
   },
   {
     id: 38,
-    name: "Everyday Tote",
+    name: "Brook Tote",
     category: "tote",
     price: 190000,
     image: "images/bag-38.jpg",
@@ -381,7 +381,7 @@ const products = [
   },
   {
     id: 39,
-    name: "Everyday Charm",
+    name: "Quinn Mini Bag",
     category: "mini",
     price: 240000,
     image: "images/bag-39.jpg",
@@ -391,7 +391,7 @@ const products = [
   },
   {
     id: 40,
-    name: "Soft Tote",
+    name: "Willow Tote",
     category: "tote",
     price: 170000,
     image: "images/bag-40.jpg",
