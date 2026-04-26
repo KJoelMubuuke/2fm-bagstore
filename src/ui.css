@@ -726,8 +726,8 @@ h2,
 
 .site-footer {
   margin-top: 2.4rem;
-  border-top: 1px solid var(--line);
-  background: var(--surface);
+  border-top: 1px solid #1f1f1f;
+  background: #111111;
 }
 
 .footer-grid {
@@ -738,10 +738,10 @@ h2,
 }
 
 .footer-grid section {
-  border: 1px solid var(--line);
+  border: 1px solid #2a2a2a;
   border-radius: var(--radius-md);
   padding: 1rem;
-  background: color-mix(in srgb, #fff 85%, transparent);
+  background: #171717;
 }
 
 .footer-grid h3,
@@ -754,8 +754,13 @@ h2,
 .footer-brand-block p,
 .footer-meta p {
   margin: 0;
-  color: var(--muted);
+  color: #b3b3b3;
   line-height: 1.5;
+}
+
+.footer-grid h3,
+.footer-grid h4 {
+  color: #ffffff;
 }
 
 .footer-brand-block {
@@ -789,9 +794,16 @@ h2,
 .footer-links button,
 .footer-meta a,
 .footer-bottom a {
-  color: var(--ink);
+  color: #f2f2f2;
   text-decoration: none;
   font-weight: 500;
+}
+
+.footer-links a:hover,
+.footer-links button:hover,
+.footer-meta a:hover,
+.footer-bottom a:hover {
+  color: #22c55e;
 }
 
 .footer-links button {
@@ -809,7 +821,7 @@ h2,
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid #2a2a2a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -820,7 +832,7 @@ h2,
 
 .footer-bottom p {
   margin: 0;
-  color: var(--muted);
+  color: #9b9b9b;
 }
 
 .floating-whatsapp {
