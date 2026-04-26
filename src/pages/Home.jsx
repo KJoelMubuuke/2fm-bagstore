@@ -1,20 +1,70 @@
+import { useEffect, useState } from "react";
 import { RefreshCcw, ShieldCheck, Sparkles, Truck } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 
+const heroSlides = [
+  {
+    src: "/images/bag-21.jpg",
+    alt: "Blue chain satchel bag set"
+  },
+  {
+    src: "/images/bag-22.jpg",
+    alt: "Black chain satchel bag set"
+  },
+  {
+    src: "/images/bag-23.jpg",
+    alt: "Burgundy handbag and clutch set"
+  },
+  {
+    src: "/images/bag-24.jpg",
+    alt: "Blush and burgundy structured tote set"
+  },
+  {
+    src: "/images/bag-31.jpg",
+    alt: "Mini crossbody bags with gold lock detail"
+  },
+  {
+    src: "/images/bag-35.jpg",
+    alt: "Cream and sky-blue shoulder bag set"
+  },
+  {
+    src: "/images/bag-36.jpg",
+    alt: "Mint and ivory premium bag set"
+  },
+  {
+    src: "/images/bag-37.jpg",
+    alt: "Neutral modern crossbody collection"
+  }
+];
+
 function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
+  const [activeHeroIndex, setActiveHeroIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveHeroIndex((current) => (current + 1) % heroSlides.length);
+    }, 2500);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-media" role="img" aria-label="Stylish women's handbags in a studio setting">
-            <img src="/premium_bag_hero.png" alt="Elegant handbag styled for modern everyday wear" />
+            <img
+              src={heroSlides[activeHeroIndex].src}
+              alt={heroSlides[activeHeroIndex].alt}
+              key={heroSlides[activeHeroIndex].src}
+            />
           </div>
 
           <div className="hero-copy">
             <p className="eyebrow">Studio Drop 2026</p>
-            <h1>Carry bold. Move easy.</h1>
+            <h1>Premium women's handbags designed to carry bold. Move easy.</h1>
             <p>
-              Discover silhouettes designed for daily movement and special moments. Build your order bag in seconds and place the full order straight on WhatsApp.
+              Discover our curated collection of designer bags, crossbody handbags, and luxury tote bags designed for daily movement and special moments. Shop authentic leather bags, structured crossbody bags, and elegant shoulder bags. Build your order in seconds and place directly on WhatsApp.
             </p>
 
             <div className="hero-actions">
@@ -84,7 +134,8 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
         <div className="container">
           <div className="section-heading">
             <p className="eyebrow">Featured Edit</p>
-            <h2>Best-selling signatures</h2>
+            <h2>Best-selling designer handbags & clutch collections</h2>
+            <p className="collection-subtitle">Explore our most loved bags: luxury crossbody bags, premium totes, and everyday handbags</p>
           </div>
 
           <div className="product-grid">
@@ -104,14 +155,14 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
         <div className="container about-grid">
           <div className="about-copy">
             <p className="eyebrow">Why shoppers return</p>
-            <h2>Fashion-forward shapes with real-life functionality.</h2>
+            <h2>Premium leather handbags crafted with fashion-forward shapes & real-life functionality.</h2>
             <p>
-              Every piece is chosen to work for real schedules, not just photos. That means thoughtful compartments, easy-to-carry silhouettes, and styling that feels current without being hard to wear.
+              Every designer bag in our collection is handpicked to work for real schedules, not just photos. From structured tote bags to elegant crossbody handbags, we offer leather bags, luxury clutches, and shoulder bags with thoughtful compartments, easy-to-carry silhouettes, and styling that feels current without being hard to wear.
             </p>
             <ul>
-              <li>Comfort-first straps and durable finishing.</li>
-              <li>Useful sizes for work, errands, and weekends.</li>
-              <li>Help available through WhatsApp whenever you need it.</li>
+              <li>Comfort-first straps, quality hardware, and durable finishing on every designer handbag.</li>
+              <li>Perfectly sized bags for work, errands, weekends, and travel—crossbody bags, totes, clutches, and more.</li>
+              <li>WhatsApp styling consultation and bag care support whenever you need it.</li>
             </ul>
           </div>
 

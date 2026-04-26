@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
+import About from "./pages/About";
 import { featuredProducts, products } from "./data/products";
 
 const WHATSAPP_NUMBER = "256751007508";
@@ -104,14 +106,21 @@ function App() {
             onAskAboutProduct={() => askOnWhatsApp()}
             onAddToCart={addToCart}
           />
-        ) : (
+        ) : activePage === "shop" ? (
           <Shop
             products={products}
             onAskAboutProduct={askOnWhatsApp}
             onAddToCart={addToCart}
           />
+        ) : (
+          <About
+            onShopNow={() => setActivePage("shop")}
+            onAskAboutProduct={() => askOnWhatsApp()}
+          />
         )}
       </main>
+
+      <Footer onNavigate={setActivePage} />
 
       <aside className={`cart-drawer ${cartOpen ? "open" : ""}`}>
         <div className="cart-head">

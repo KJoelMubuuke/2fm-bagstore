@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 
 const navItems = [
   { id: "home", label: "Home" },
-  { id: "shop", label: "Shop" }
+  { id: "shop", label: "Shop" },
+  { id: "about", label: "About" }
 ];
 
 function Navbar({ activePage, onNavigate, cartCount, onOpenCart }) {
