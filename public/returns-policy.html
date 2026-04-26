@@ -7,17 +7,55 @@
     <meta name="description" content="Read 2FM BAGSTORE return and exchange guidelines for handbag orders." />
     <link rel="canonical" href="https://2fm-bagstore.vercel.app/returns-policy.html" />
     <style>
-      body { font-family: "DM Sans", sans-serif; margin: 0; background: #ffffff; color: #1f1f1f; }
+      :root {
+        --bg: #ffffff;
+        --surface: #f8f8f8;
+        --ink: #1f1f1f;
+        --muted: #757575;
+        --line: #e0e0e0;
+        --brand: #22c55e;
+        --brand-deep: #15803d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: "DM Sans", sans-serif;
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      .top-note {
+        margin: 0;
+        padding: 0.55rem 1rem;
+        text-align: center;
+        background: var(--brand);
+        color: #fff;
+        font-size: 0.84rem;
+        letter-spacing: 0.01em;
+      }
       .container { width: min(900px, 92%); margin: 2rem auto; }
-      h1, h2 { font-family: "Fraunces", serif; }
-      .card { border: 1px solid #e0e0e0; border-radius: 14px; padding: 1rem; margin-top: 1rem; }
-      a { color: #15803d; }
+      h1, h2 { font-family: "Fraunces", serif; margin-top: 0; }
+      .lede { color: var(--muted); line-height: 1.6; }
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 1rem;
+        margin-top: 1rem;
+        background: var(--surface);
+      }
+      .card p { color: var(--muted); margin-bottom: 0; }
+      a {
+        color: var(--brand-deep);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover { text-decoration: underline; }
     </style>
   </head>
   <body>
+    <p class="top-note">2FM BAGSTORE policy page</p>
     <main class="container">
       <h1>Returns Policy</h1>
-      <p>We value customer satisfaction and handle returns through direct support.</p>
+      <p class="lede">We value customer satisfaction and handle returns through direct support.</p>
       <section class="card">
         <h2>Return Window</h2>
         <p>Return requests should be made within 7 days after delivery.</p>
