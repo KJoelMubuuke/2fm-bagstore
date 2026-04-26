@@ -4,10 +4,10 @@
   --ink: #1f1f1f;
   --muted: #757575;
   --line: #e0e0e0;
-  --brand: #ff6b35;
-  --brand-deep: #e55100;
-  --teal: #ff6b35;
-  --gold: #ff6b35;
+  --brand: #22c55e;
+  --brand-deep: #15803d;
+  --teal: #22c55e;
+  --gold: #22c55e;
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -108,7 +108,7 @@ body {
 
 .site-nav a.active,
 .site-nav a:hover {
-  background: #fff3e0;
+  background: #f0fdf4;
   color: var(--brand-deep);
 }
 
@@ -236,7 +236,7 @@ h2,
   background: var(--brand-deep);
   border-color: var(--brand-deep);
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(229, 81, 0, 0.22);
+  box-shadow: 0 10px 20px rgba(21, 128, 61, 0.22);
 }
 
 .btn-ghost {
@@ -246,8 +246,8 @@ h2,
 }
 
 .btn-ghost:hover {
-  background: #fff3e0;
-  border-color: #ffd6b8;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
   color: var(--brand-deep);
 }
 
@@ -379,9 +379,9 @@ h2,
 
 .filter-btn.active,
 .filter-btn:hover {
-  background: #fff3e0;
+  background: #f0fdf4;
   color: var(--brand-deep);
-  border-color: #ffe0c7;
+  border-color: #bbf7d0;
 }
 
 .product-grid {
@@ -577,8 +577,8 @@ h2,
   font-weight: 700;
   font-size: 0.8rem;
   color: var(--brand-deep);
-  background: #fff3e0;
-  border: 1px solid #ffd6b8;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
 }
 
 .step-card h4 {
@@ -802,8 +802,8 @@ h2,
 }
 
 .cart-head button:hover {
-  background: #fff3e0;
-  border-color: #ffd6b8;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
 }
 
 .cart-body {
