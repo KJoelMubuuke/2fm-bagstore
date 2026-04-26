@@ -61,18 +61,18 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
           </div>
 
           <div className="hero-copy">
-            <p className="eyebrow">Studio Drop 2026</p>
-            <h1>Premium women's handbags designed to carry bold. Move easy.</h1>
+            <p className="eyebrow">Bags in Uganda</p>
+            <h1>Affordable Quality Bags in Uganda</h1>
             <p>
-              Discover our curated collection of designer bags, crossbody handbags, and luxury tote bags designed for daily movement and special moments. Shop authentic leather bags, structured crossbody bags, and elegant shoulder bags. Build your order in seconds and place directly on WhatsApp.
+              Shop stylish ladies handbags and everyday backpacks delivered in Kampala. Choose your favorite bag and order directly on WhatsApp in seconds.
             </p>
 
             <div className="hero-actions">
-              <button type="button" className="btn btn-solid" onClick={onShopNow}>
-                Shop now
+              <button type="button" className="btn btn-solid" onClick={onAskAboutProduct}>
+                Order on WhatsApp
               </button>
-              <button type="button" className="btn btn-ghost" onClick={onAskAboutProduct}>
-                Style consultation
+              <button type="button" className="btn btn-ghost" onClick={() => onShopNow("all")}>
+                Browse collection
               </button>
             </div>
 
@@ -94,37 +94,58 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
         </div>
       </section>
 
+      <section className="category-section">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Shop by Category</p>
+            <h2>Find the right bag quickly</h2>
+            <p className="subtle-text">
+              Browse our top categories for personal style and daily use.
+            </p>
+          </div>
+          <div className="category-grid">
+            <button type="button" className="category-card" onClick={() => onShopNow("ladies-handbags")}>Ladies Handbags</button>
+            <button type="button" className="category-card" onClick={() => onShopNow("backpacks")}>Backpacks</button>
+            <button type="button" className="category-card" onClick={() => onShopNow("all")}>All Bags</button>
+            <button type="button" className="category-card" onClick={() => onShopNow("ladies-handbags")}>Crossbody & Totes</button>
+          </div>
+        </div>
+      </section>
+
       <section className="trust-bar">
         <div className="container trust-grid">
+          <div className="trust-title">
+            <h3>Why Choose Us</h3>
+          </div>
           <div className="trust-item">
             <ShieldCheck size={24} />
             <div>
-              <h3>Secure Checkout</h3>
-              <p>Protected payments</p>
+              <h3>Affordable Prices</h3>
+              <p>Market-based price ranges</p>
             </div>
           </div>
 
           <div className="trust-item">
             <Truck size={24} />
             <div>
-              <h3>Express Delivery</h3>
-              <p>Fast shipping support</p>
+              <h3>Fast Delivery</h3>
+              <p>Kampala delivery support</p>
             </div>
           </div>
 
           <div className="trust-item">
             <Sparkles size={24} />
             <div>
-              <h3>Premium Quality</h3>
-              <p>Clean finishing</p>
+              <h3>Quality Guaranteed</h3>
+              <p>Carefully selected bags</p>
             </div>
           </div>
 
           <div className="trust-item">
             <RefreshCcw size={24} />
             <div>
-              <h3>Easy Returns</h3>
-              <p>30-day return policy</p>
+              <h3>Easy WhatsApp Ordering</h3>
+              <p>Quick support and order placement</p>
             </div>
           </div>
         </div>
@@ -168,6 +189,50 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
 
           <div className="about-media">
             <img src="/images/bag-17.jpg" alt="Handbag styled in a lifestyle setting" />
+          </div>
+        </div>
+      </section>
+
+      <section className="testimonials">
+        <div className="container">
+          <div className="section-heading">
+            <p className="eyebrow">Customer Reviews</p>
+            <h2>What shoppers say</h2>
+          </div>
+          <div className="testimonial-grid">
+            <article className="testimonial-card">
+              <p className="stars">★★★★★</p>
+              <p>Very good quality bag. Exactly what I wanted.</p>
+              <strong>- Aisha, Kampala</strong>
+            </article>
+            <article className="testimonial-card">
+              <p className="stars">★★★★★</p>
+              <p>Fast delivery and smooth WhatsApp support. Thank you!</p>
+              <strong>- Brenda, Ntinda</strong>
+            </article>
+            <article className="testimonial-card">
+              <p className="stars">★★★★★</p>
+              <p>Great price and the bag looks even better in person.</p>
+              <strong>- Maria, Kireka</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact-strip">
+        <div className="container contact-grid">
+          <div>
+            <p className="eyebrow">Contact & Location</p>
+            <h2>Order support in Kampala</h2>
+            <p className="subtle-text">Phone: +256 751 007508</p>
+            <p className="subtle-text">WhatsApp: +256 751 007508</p>
+            <p className="subtle-text">Location: Topcity Plaza Basement Ed 52, Kampala Uganda</p>
+            <p className="subtle-text">Delivery: Same day and next-day options available</p>
+          </div>
+          <div className="contact-actions">
+            <button type="button" className="btn btn-solid" onClick={onAskAboutProduct}>
+              Order on WhatsApp
+            </button>
           </div>
         </div>
       </section>

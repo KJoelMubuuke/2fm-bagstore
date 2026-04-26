@@ -1,25 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 
 const filterOptions = [
   { id: "all", label: "All" },
-  { id: "tote", label: "Totes" },
-  { id: "crossbody", label: "Crossbody" },
-  { id: "mini", label: "Mini" },
-  { id: "clutch", label: "Clutch" }
+  { id: "ladies-handbags", label: "Ladies Handbags" },
+  { id: "backpacks", label: "Backpacks" }
 ];
 
-function Shop({ products, onAskAboutProduct, onAddToCart }) {
-  const [activeFilter, setActiveFilter] = useState("all");
+function Shop({ products, initialCategory = "all", onAskAboutProduct, onAddToCart }) {
+  const [activeFilter, setActiveFilter] = useState(initialCategory);
   const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    setActiveFilter(initialCategory);
+  }, [initialCategory]);
 
   const visibleProducts =
     activeFilter === "all"
       ? products
-      : products.filter((product) => product.category === activeFilter);
+      : products.filter((product) => product.segment === activeFilter);
 
   const finalProducts = visibleProducts.filter((product) =>
-    product.name.toLowerCase().includes(query.trim().toLowerCase())
+    `${product.name} ${product.segment}`.toLowerCase().includes(query.trim().toLowerCase())
   );
 
   return (
@@ -27,9 +29,9 @@ function Shop({ products, onAskAboutProduct, onAddToCart }) {
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Shop 2FM</p>
-          <h2>Women's Handbags</h2>
+          <h2>Affordable Quality Bags in Uganda</h2>
           <p className="subtle-text">
-            Filter by style to find a bag that matches your day, then ask on WhatsApp if you want help choosing.
+            Browse ladies handbags and backpacks with delivery support in Kampala.
           </p>
         </div>
 
@@ -37,7 +39,7 @@ function Shop({ products, onAskAboutProduct, onAddToCart }) {
           <input
             className="search-input"
             type="search"
-            placeholder="Search styles..."
+            placeholder="Search bags by name or category..."
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />

@@ -11,6 +11,7 @@ const WHATSAPP_NUMBER = "256751007508";
 
 function App() {
   const [activePage, setActivePage] = useState("home");
+  const [shopCategory, setShopCategory] = useState("all");
   const [cartOpen, setCartOpen] = useState(false);
   const [cart, setCart] = useState([]);
   const [customerName, setCustomerName] = useState("");
@@ -44,8 +45,8 @@ function App() {
 
   const askOnWhatsApp = (product) => {
     const message = product
-      ? `Hello 2FM BAGSTORE, I am interested in ${product.name}.`
-      : "Hello 2FM BAGSTORE, I need help choosing a bag.";
+      ? `Hello, I want this bag: ${product.name}.`
+      : "Hello, I want to order a bag from 2FM BAGSTORE.";
 
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
@@ -102,19 +103,27 @@ function App() {
         {activePage === "home" ? (
           <Home
             featuredProducts={featuredProducts}
-            onShopNow={() => setActivePage("shop")}
+            products={products}
+            onShopNow={(category = "all") => {
+              setShopCategory(category);
+              setActivePage("shop");
+            }}
             onAskAboutProduct={() => askOnWhatsApp()}
             onAddToCart={addToCart}
           />
         ) : activePage === "shop" ? (
           <Shop
             products={products}
+            initialCategory={shopCategory}
             onAskAboutProduct={askOnWhatsApp}
             onAddToCart={addToCart}
           />
         ) : (
           <About
-            onShopNow={() => setActivePage("shop")}
+            onShopNow={() => {
+              setShopCategory("all");
+              setActivePage("shop");
+            }}
             onAskAboutProduct={() => askOnWhatsApp()}
           />
         )}
