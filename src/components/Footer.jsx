@@ -21,6 +21,10 @@ function Footer({ onNavigate }) {
             <button type="button" onClick={() => onNavigate("home")}>Home</button>
             <button type="button" onClick={() => onNavigate("shop")}>Shop</button>
             <button type="button" onClick={() => onNavigate("about")}>About</button>
+            <a href="/delivery-policy.html">Delivery Policy</a>
+            <a href="/returns-policy.html">Returns Policy</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms & Conditions</a>
             <a href="https://wa.me/256751007508" target="_blank" rel="noreferrer">
               Order Support
             </a>
