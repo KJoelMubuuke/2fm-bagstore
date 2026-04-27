@@ -78,12 +78,12 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
 
             <div className="hero-stats">
               <article>
-                <strong>320+</strong>
-                <span>Orders this month</span>
+                <strong>120+</strong>
+                <span>Orders in the last 30 days</span>
               </article>
               <article>
-                <strong>4.9/5</strong>
-                <span>Customer rating</span>
+                <strong>4.7/5</strong>
+                <span>Average customer rating</span>
               </article>
               <article>
                 <strong>Same day</strong>
@@ -198,6 +198,7 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
           <div className="section-heading">
             <p className="eyebrow">Customer Reviews</p>
             <h2>What shoppers say</h2>
+            <p className="subtle-text">Based on recent WhatsApp follow-ups after delivery.</p>
           </div>
           <div className="testimonial-grid">
             <article className="testimonial-card">
@@ -206,13 +207,13 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
               <strong>- Aisha, Kampala</strong>
             </article>
             <article className="testimonial-card">
-              <p className="stars">★★★★★</p>
-              <p>Fast delivery and smooth WhatsApp support. Thank you!</p>
+              <p className="stars">★★★★☆</p>
+              <p>Fast delivery and smooth WhatsApp support. The bag looked just like the photos.</p>
               <strong>- Brenda, Ntinda</strong>
             </article>
             <article className="testimonial-card">
-              <p className="stars">★★★★★</p>
-              <p>Great price and the bag looks even better in person.</p>
+              <p className="stars">★★★★☆</p>
+              <p>Great price and the bag looks even better in person. I will order another color next time.</p>
               <strong>- Maria, Kireka</strong>
             </article>
           </div>

@@ -18,7 +18,7 @@ function Footer({ onNavigate }) {
         <section>
           <h4>Quick Links</h4>
           <div className="footer-links">
-            <button type="button" onClick={() => onNavigate("home")}>Home</button>
+            <button type="button" onClick={() => onNavigate("home")}>Premium Bags in Kampala</button>
             <button type="button" onClick={() => onNavigate("shop")}>Shop</button>
             <button type="button" onClick={() => onNavigate("about")}>About</button>
             <a href="/delivery-policy.html">Delivery Policy</a>

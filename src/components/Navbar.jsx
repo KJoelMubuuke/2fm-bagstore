@@ -2,7 +2,7 @@ import { MessageCircle, Menu, ShoppingBag, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: "home", label: "Home" },
+  { id: "home", label: "Premium Bags in Kampala" },
   { id: "shop", label: "Shop" },
   { id: "about", label: "About" }
 ];
@@ -22,7 +22,7 @@ function Navbar({ activePage, onNavigate, cartCount, onOpenCart }) {
 
   return (
     <header className="site-header" id="top">
-      <p className="top-note">New drop live: free style guidance + WhatsApp ordering support.</p>
+      <p className="top-note">Premium quality bags in Kampala with free style guidance + WhatsApp ordering support.</p>
       <div className="container nav-wrap">
         <a
           href="#top"
