@@ -224,8 +224,8 @@ function Home({ featuredProducts, onShopNow, onAskAboutProduct, onAddToCart }) {
           <div>
             <p className="eyebrow">Contact & Location</p>
             <h2>Order support in Kampala</h2>
-            <p className="subtle-text">Phone: +256 751 007508</p>
-            <p className="subtle-text">WhatsApp: +256 751 007508</p>
+            <p className="subtle-text">Calls: +256 701 168170</p>
+            <p className="subtle-text">WhatsApp: +256 768 620345, +256 701 168170</p>
             <p className="subtle-text">Location: Topcity Plaza Basement Ed 52, Kampala Uganda</p>
             <p className="subtle-text">Delivery: Same day and next-day options available</p>
           </div>

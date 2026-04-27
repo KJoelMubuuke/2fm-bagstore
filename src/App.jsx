@@ -7,7 +7,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import { featuredProducts, products } from "./data/products";
 
-const WHATSAPP_NUMBER = "256751007508";
+const WHATSAPP_NUMBER = "256701168170";
 
 function App() {
   const [activePage, setActivePage] = useState("home");

@@ -61,7 +61,7 @@ function Navbar({ activePage, onNavigate, cartCount, onOpenCart }) {
 
           <a
             className="action-btn"
-            href="https://wa.me/256751007508"
+            href="https://wa.me/256701168170"
             target="_blank"
             rel="noreferrer"
             aria-label="Chat on WhatsApp"

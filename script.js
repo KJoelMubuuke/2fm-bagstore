@@ -504,7 +504,7 @@ window.changeQuantity = function(productId, delta) {
 
 window.checkoutWhatsApp = function() {
   if (cart.length === 0) return;
-  const phoneNumber = "256751007508";
+  const phoneNumber = "256701168170";
   let message = "Hello 2FM BAGSTORE! I would like to place an order:%0A%0A";
   cart.forEach(item => {
     message += `- ${item.name} x${item.quantity} (${new Intl.NumberFormat().format(item.price * item.quantity)} Ug shilings)%0A`;

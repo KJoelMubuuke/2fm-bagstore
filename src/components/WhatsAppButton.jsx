@@ -6,7 +6,7 @@ function WhatsAppButton({ totalItems }) {
   return (
     <a
       className="floating-whatsapp"
-      href={`https://wa.me/256751007508?text=${message}`}
+      href={`https://wa.me/256701168170?text=${message}`}
       target="_blank"
       rel="noreferrer"
       aria-label="Chat with us on WhatsApp"

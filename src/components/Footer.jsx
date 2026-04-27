@@ -10,7 +10,7 @@ function Footer({ onNavigate }) {
             Curated handbags for work, travel, and events. Place your order with confidence through
             WhatsApp support.
           </p>
-          <a href="https://wa.me/256751007508" target="_blank" rel="noreferrer" className="footer-cta">
+          <a href="https://wa.me/256701168170" target="_blank" rel="noreferrer" className="footer-cta">
             Chat on WhatsApp
           </a>
         </section>
@@ -25,7 +25,7 @@ function Footer({ onNavigate }) {
             <a href="/returns-policy.html">Returns Policy</a>
             <a href="/privacy-policy.html">Privacy Policy</a>
             <a href="/terms.html">Terms & Conditions</a>
-            <a href="https://wa.me/256751007508" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/256701168170" target="_blank" rel="noreferrer">
               Order Support
             </a>
           </div>
@@ -37,7 +37,7 @@ function Footer({ onNavigate }) {
             <p>Topcity Plaza Basement Ed 52, Kampala Uganda</p>
             <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
             <p>
-              <a href="tel:+256751007508">+256 751 007508</a>
+              <a href="tel:+256701168170">+256 701 168170</a>
             </p>
             <p>
               <a href="mailto:Katereggafartie@gmail.com">Katereggafartie@gmail.com</a>
