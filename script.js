@@ -440,7 +440,7 @@ function updateCartUI() {
 
   cartItemsContainer.innerHTML = cart.map(item => `
     <div class="cart-item" style="display:flex; gap:1rem; margin-bottom:1.5rem; align-items:center;">
-      <img src="${item.image}" style="width:60px; height:60px; border-radius:8px; object-fit:cover;" />
+      <img src="${item.image}" alt="${item.name}" style="width:60px; height:60px; border-radius:8px; object-fit:cover;" />
       <div style="flex:1">
         <h4 style="margin:0; font-size:0.9rem;">${item.name}</h4>
         <p style="margin:0; font-size:0.8rem; color:var(--text-muted)">${new Intl.NumberFormat().format(item.price)} Ug shilings</p>
@@ -557,7 +557,9 @@ window.openModal = function(productId) {
   const p = products.find(prod => prod.id === productId);
   if (!p) return;
 
-  document.getElementById("modalImg").src = p.image;
+  const modalImg = document.getElementById("modalImg");
+  modalImg.src = p.image;
+  modalImg.alt = p.name;
   document.getElementById("modalTitle").textContent = p.name;
   document.getElementById("modalPrice").textContent = `${new Intl.NumberFormat().format(p.price)} Ug shilings`;
   document.getElementById("modalCategory").textContent = p.category;

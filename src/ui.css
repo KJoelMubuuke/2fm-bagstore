@@ -770,7 +770,10 @@ h2,
 
 .footer-cta {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
+  text-align: center;
   text-decoration: none;
   border-radius: 999px;
   border: 1px solid var(--brand);
