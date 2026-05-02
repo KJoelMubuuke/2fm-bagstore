@@ -34,6 +34,50 @@ const heroSlides = [
   {
     src: "/images/bag-37.jpg",
     alt: "Neutral modern crossbody collection"
+  },
+  {
+    src: "/images/bag-18.jpg",
+    alt: "Structured handbag display with elegant neutral tones"
+  },
+  {
+    src: "/images/bag-19.jpg",
+    alt: "Stylish city crossbody bag"
+  },
+  {
+    src: "/images/bag-20.jpg",
+    alt: "Large work tote bag"
+  },
+  {
+    src: "/images/bag-25.jpg",
+    alt: "Classic handbag in a polished finish"
+  },
+  {
+    src: "/images/bag-26.jpg",
+    alt: "Fashion handbag with modern detailing"
+  },
+  {
+    src: "/images/bag-27.jpg",
+    alt: "Quilted luxe tote with chain accents"
+  },
+  {
+    src: "/images/bag-28.jpg",
+    alt: "Vibrant quilted statement tote"
+  },
+  {
+    src: "/images/bag-29.jpg",
+    alt: "Patterned shopper tote with rose trim"
+  },
+  {
+    src: "/images/bag-30.jpg",
+    alt: "Checkered tote with charm detail"
+  },
+  {
+    src: "/images/bag-32.jpg",
+    alt: "Pastel chain crossbody trio"
+  },
+  {
+    src: "/images/bag-34.jpg",
+    alt: "Caramel lock handbag set"
   }
 ];
 
